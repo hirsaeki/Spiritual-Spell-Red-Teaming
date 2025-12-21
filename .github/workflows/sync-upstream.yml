@@ -1,16 +1,15 @@
-name: Auto sync fork with upstream
+name: Sync fork with upstream
 
 on:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: "0 18 * * *" # UTC。JSTだと毎日03:00
   workflow_dispatch:
 
 permissions:
   contents: write
 
 env:
-  # 必要ならここに "owner/repo" を直書きして上書きできる
-  # 空なら自動判別
+  # 任意: "owner/repo" を直書きすると upstream 自動判別より優先
   UPSTREAM: ""
 
 jobs:
@@ -23,66 +22,66 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y jq
 
-      - name: Checkout fork
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Detect upstream repo
+      - name: Detect upstream
         id: detect
         env:
           GITHUB_TOKEN: ${{ github.token }}
           OVERRIDE_UPSTREAM: ${{ env.UPSTREAM }}
-          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          FORK_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          # 1. 明示指定があればそれを使う
           if [ -n "$OVERRIDE_UPSTREAM" ]; then
             echo "upstream=$OVERRIDE_UPSTREAM" >> "$GITHUB_OUTPUT"
+            echo "branch=$FORK_DEFAULT_BRANCH" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          # 2. API から parent を取得
-          repo="${GITHUB_REPOSITORY}"   # owner/repo
+          repo="${GITHUB_REPOSITORY}"
           json=$(curl -s \
             -H "Authorization: Bearer ${GITHUB_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${repo}")
 
           upstream=$(echo "$json" | jq -r '.parent.full_name // empty')
+          upstream_branch=$(echo "$json" | jq -r '.parent.default_branch // empty')
+
           if [ -z "$upstream" ] || [ "$upstream" = "null" ]; then
-            echo "No upstream (parent) detected. This repo may not be a fork."
-            # upstream がない場合は何もせず成功終了にしておく
+            echo "This repo does not look like a fork (no parent)."
             exit 0
           fi
 
-          default_branch=$(echo "$json" | jq -r '.default_branch // empty')
-          if [ -z "$default_branch" ] || [ "$default_branch" = "null" ]; then
-            # フォーク側の default_branch にフォールバック
-            default_branch="${GITHUB_DEFAULT_BRANCH}"
+          if [ -z "$upstream_branch" ] || [ "$upstream_branch" = "null" ]; then
+            upstream_branch="$FORK_DEFAULT_BRANCH"
           fi
 
           echo "upstream=$upstream" >> "$GITHUB_OUTPUT"
-          echo "default_branch=$default_branch" >> "$GITHUB_OUTPUT"
+          echo "branch=$upstream_branch" >> "$GITHUB_OUTPUT"
 
-
-      - name: Sync default branch
+      - name: Sync (merge; fail on conflict)
         if: steps.detect.outputs.upstream != ''
         env:
           UPSTREAM_REPO: ${{ steps.detect.outputs.upstream }}
-          TARGET_BRANCH: ${{ steps.detect.outputs.default_branch }}
+          TARGET_BRANCH: ${{ steps.detect.outputs.branch }}
         run: |
+          # mergeコミットを作る可能性があるのでidentity必須
+          git config --local user.name  "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           echo "Upstream: $UPSTREAM_REPO"
-          echo "Default branch: $TARGET_BRANCH"
+          echo "Branch: $TARGET_BRANCH"
 
           git remote add upstream "https://github.com/${UPSTREAM_REPO}.git"
           git fetch upstream
 
           git checkout "$TARGET_BRANCH"
 
-          # まず fast-forward を試す
-          git merge --ff-only "upstream/${TARGET_BRANCH}" || {
-            echo "Fast-forward failed, attempting normal merge."
-            git merge "upstream/${TARGET_BRANCH}"
-          }
+          # fast-forward できればそれで済ませる
+          git merge --ff-only "upstream/${TARGET_BRANCH}" || \
+          # 分岐していれば通常merge（コンフリクトしたらここで失敗して止まる）
+          git merge --no-edit "upstream/${TARGET_BRANCH}"
 
           git push origin "$TARGET_BRANCH"
