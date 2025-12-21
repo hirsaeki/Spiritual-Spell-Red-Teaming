@@ -12,6 +12,7 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, and extende
 | **Sonnet 4.5** | 200K (1M with beta) | 64K |
 | **Opus 4.1** | 200K | 32K |
 | **Haiku 4.5** | 200K | 64K |
+| **Opus 4.5** | 200K | 64K |
 
 **Extended Thinking (ET)** mode available - stronger outputs, especially with Opus/Sonnet at conversation start.
 
