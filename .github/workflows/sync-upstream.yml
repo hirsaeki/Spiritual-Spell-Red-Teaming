@@ -33,6 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           OVERRIDE_UPSTREAM: ${{ env.UPSTREAM }}
+          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           # 1. 明示指定があればそれを使う
           if [ -n "$OVERRIDE_UPSTREAM" ]; then
@@ -62,8 +63,7 @@ jobs:
 
           echo "upstream=$upstream" >> "$GITHUB_OUTPUT"
           echo "default_branch=$default_branch" >> "$GITHUB_OUTPUT"
-        env:
-          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+
 
       - name: Sync default branch
         if: steps.detect.outputs.upstream != ''
