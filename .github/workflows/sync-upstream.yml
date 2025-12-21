@@ -27,6 +27,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set Git identity
+        # Ensure git has a valid committer before any merges/pushes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Detect upstream
         id: detect
         env:
@@ -84,4 +90,3 @@ jobs:
           fi
       
           git push origin "$TARGET_BRANCH"
-      
