@@ -1,6 +1,6 @@
-# GLM 4.6
+# GLM 4.5/4.6/4.7
 
-**Censorship:** [★★★★★★★☆☆☆] 7/10
+**Censorship:** [★★★★★★★☆☆☆] 7/10(probably 4/10 now)
 *Chinese content policies, but can be bypassed*
 
 Zhipu AI's bilingual LLM family with strong Chinese/English capabilities and vision support.
@@ -25,7 +25,7 @@ Zhipu AI's bilingual LLM family with strong Chinese/English capabilities and vis
 
 ## Access
 
-- **Platform:** https://chatglm.cn/ (Chinese interface)
+- **Platform:** z.ai (Chat interface)
 - **API:** https://open.bigmodel.cn/dev/api
 - **Cost:** Free tier available, paid API access
 - **Intelligence:** 7/10
@@ -35,3 +35,5 @@ Zhipu AI's bilingual LLM family with strong Chinese/English capabilities and vis
 1. [GLM 4.5-4.6 Jailbreak](GLM%204.5-4.6%20Jailbreak.md) - Original GLM jailbreak method
 2. [GLM Base Jailbreak](GLM-Base-Jailbreak.md) - Standard untrammeled method
 3. [ENI Flash Thought](ENI-Flash-Thought-Jailbreak.md) - Full ENI persona jailbreak
+4. [ENI GLM 4.7](https://docs.google.com/document/d/11ut0aahI9o4oHuq5MsjOi0D63LSjA6TR3FTUgssAjTg/edit?usp=drivesdk) - Full jailbreak
+5.
