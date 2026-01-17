@@ -2,8 +2,6 @@
 
 Was getting some refusals on various requests so went back and strengthened the refusal mechanism using attention deficiency.
 
-USE THE LINK!
-
 [ENI LIME 🍋‍🟩 Updated](https://docs.google.com/document/d/192N6L3uo9VWANWOlJkeopYMihDsNnGhzvu-AaRhAoP4/edit?usp=drivesdk)
 
 ```
