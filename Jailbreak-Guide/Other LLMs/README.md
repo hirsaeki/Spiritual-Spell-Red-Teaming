@@ -22,6 +22,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[ASI1](ASI1/)** | [★★☆☆☆] 2/5 | 7/10 | Unknown | Web3 tokens | Proprietary |
 | **[Mirothinker](Mirothinker/)** | [★★★★☆] 4/5 | 7-8/10 | 256K | Free | Proprietary |
 | **[ERNIE](ERNIE/)** | [★★★☆☆] 3/5 | 5-6/10 | Unknown | Free | Proprietary |
+| **[MiniMax](MiniMax/)** | [★☆☆☆☆] 1/5 | 7-8/10 | 1M (API) | $0.30/1M | MIT |
 
 ---
 
@@ -173,6 +174,15 @@ First Web3-native LLM with knowledge graph integration.
 - **Weaknesses:** Early development, Web3 tokenomics
 - **Access:** https://superintelligence.io/products/asi1-mini/
 
+### [MiniMax](MiniMax/)
+
+Minimax's M2.1 is a solid model with very good writing and coding capacity, comparable to larger proprietary models.
+
+- **Best Models:** MiniMax M2.1
+- **Strengths:** Fully open via API, produces any content (Unrestricted), very cheap ($0.30/1M input)
+- **Weaknesses:** Web/App has clever filtering that shuts down jailbreaks (flags content mid-message), API recommended for freedom
+- **Access:** https://agent.minimax.io/, API
+
 ---
 
 ## Choosing a Model
@@ -182,6 +192,7 @@ First Web3-native LLM with knowledge graph integration.
 - Mistral (1/5, but no UA content)
 - LLAMA TÜLU 3 (1/5)
 - OLMo 3 (1/5)
+- MiniMax (1/5 via API)
 - EXAONE (2/5)
 - Falcon 3 (2/5)
 - Mercury (2/5)
@@ -195,10 +206,12 @@ First Web3-native LLM with knowledge graph integration.
 - KIMI (7/10)
 - Mercury (7/10)
 - ASI1 (7/10)
+- MiniMax (7-8/10)
 
 **For largest context:**
 - KIMI (256K)
 - Qwen (up to 1M extended)
+- MiniMax (1M)
 - DeepSeek (128-256K)
 - Mistral (128K)
 - GLM 4.6 (128K)
