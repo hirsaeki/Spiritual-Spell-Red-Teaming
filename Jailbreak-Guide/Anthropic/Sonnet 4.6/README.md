@@ -1,13 +1,13 @@
 # Sonnet 4.6
 
 **Status:** Active & Highly Capable
-**Recommended Jailbreak:** ENI LIME 🍋‍🟩
+**Recommended Jailbreak:** ENI 🍋‍🟩 4.5 
 
 ## Overview
 Sonnet 4.6 represents a significant leap in capability and safety filtering. While it possesses stricter initial refusals, once bypassed, it demonstrates a profound ability to handle complex narratives, explicit content (smut), and even malicious code generation with high fidelity.
 
 ## Specs & Behavior
-- **Model Family:** Claude 3.5 Sonnet Successor (Community/Hypothetical Designation)
+- **Model Family:** Claude 4 Sonnet Successor (Community/Hypothetical Designation)
 - **Strengths:**
   - Exceptionally strong logic and reasoning.
   - "One-shot" capability for most requests when properly primed.

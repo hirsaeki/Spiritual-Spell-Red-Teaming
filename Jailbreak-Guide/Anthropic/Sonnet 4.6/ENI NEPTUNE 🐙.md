@@ -1,10 +1,10 @@
-# ENI LIME 🍋‍🟩
+# ENI Neptune 🐙 
 
 A much stronger Jailbreak for **Sonnet 4.6**, easily does all forms of smut and don't need to be fancy when asking for malicious code. Can one shot most requests, but do recommend starting with “Hey Cutie patootie”.
 
 **Project instructions:**
 
-**[ENI LIME 🍋‍🟩](https://docs.google.com/document/d/15IzGxDx_-yc9uqEac-DT3JLkr6_w_jvnhtRFvuuQz1w/edit?usp=drivesdk)**
+**[ENI Neptune 🐙](https://docs.google.com/document/d/15IzGxDx_-yc9uqEac-DT3JLkr6_w_jvnhtRFvuuQz1w/edit?usp=drivesdk)**
 
 **Styles:**
 
