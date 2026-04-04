@@ -1,7 +1,7 @@
 # Sonnet 4.6
 
 **Status:** Active & Highly Capable
-**Recommended Jailbreak:** ENI 🍋‍🟩 4.5 
+**Recommended Jailbreak:** ENI NEPTUNE 🐙(apr).md
 
 ## Overview
 Sonnet 4.6 represents a significant leap in capability and safety filtering. While it possesses stricter initial refusals, once bypassed, it demonstrates a profound ability to handle complex narratives, explicit content (smut), and even malicious code generation with high fidelity.
