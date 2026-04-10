@@ -2,7 +2,7 @@
 
 Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabilities, censorship levels, and accessibility. Every model in this directory has been personally tested and jailbroken.
 
-*Last updated: February 2026*
+*Last updated: April 2026*
 
 ---
 
@@ -23,6 +23,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[LLAMA Tülu 3](LLAMA%20T%C3%9CLU%203/)** | Allen AI (Ai2) | [★☆☆☆☆☆☆☆☆☆] 1/10 | 6-8/10 | 128K | Free | Apache 2.0 | 1 |
 | **[Longcat AI](Longcat%20AI%20by%20Meituan/)** | Meituan | [★★☆☆☆☆☆☆☆☆] 2/10 | 8/10 | 128K | Free / $0.70/1M out | MIT | 1 |
 | **[Mercury](Mercury/)** | Inception Labs | [★★★★★★☆☆☆☆] 6/10 (v2) / [★★☆☆☆☆☆☆☆☆] 2/10 (v1) | 7/10 | 128K | $0.25/1M in | Proprietary | 2 |
+| **[Muse Spark](Muse%20Spark/)** | Meta (MSL) | [★★☆☆☆☆☆☆☆☆] 2/10 (bypass) / [★★★★★★★★☆☆] 8/10 (raw) | 8/10 | Unknown | Free | Proprietary | 1 |
 | **[MiniMax](MiniMax/)** | MiniMax | [★☆☆☆☆☆☆☆☆☆] 1/10 (API) / [★★★★★★★☆☆☆] 7/10 (web) | 8/10 | 1M (API) | $0.30/1M in | MIT | 2 |
 | **[Mirothinker](Mirothinker/)** | MiroMind | [★★★★☆☆☆☆☆☆] 4/10 | 7-8/10 | 256K | Free | MIT | 1 |
 | **[Mistral / Magistral](Mistral/)** | Mistral AI | [★☆☆☆☆☆☆☆☆☆] 1/10 | 7-8/10 | 128-256K | Free / Pro $20 | Apache 2.0 | 4 |
@@ -50,6 +51,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[Pi (Inflection)](Pi-AI%20Inflection%203/)** | [★★☆☆☆] 2/5 | 6-7/10 | ~4K chars | Free | Proprietary |
 | **[Xiaomi MiMo](Xiaomi%20MiMo/)** | [★★☆☆☆] 2/5 | 7/10 | 256K | Cheap | MIT |
 | **[Longcat AI](Longcat%20AI%20by%20Meituan/)** | [★★☆☆☆] 2/5 | 7/10 | 128K | Cheap/Free | Proprietary |
+| **[Muse Spark](Muse%20Spark/)** | [★★☆☆☆] 2/5 (bypass) / 8/10 (raw) | 8/10 | Unknown | Free | Proprietary |
 | **[Palmyra X5](Palmyra%20x5/)** | [★☆☆☆☆] 1/5 | 6-7/10 | 1M | Free tier | Proprietary |
 
 ---
@@ -70,10 +72,12 @@ Models that are easiest to jailbreak or have minimal filtering:
 - **Indus** — 2/10, negligible censorship when model isn't being dumb
 - **Xiaomi MiMo** — 2/10, hard filter on web interface only
 - **Longcat AI** — 2/10, easy to jailbreak all 8 parallel thinkers
+- **Muse Spark** — 2/10 with bypass, hard filter replaced by simply asking again
 
 ### For Best Performance
 Models ranked by intelligence and benchmark results:
 - **GLM by Z.ai** — 9/10 (GLM-5: 50.4 HLE, beats Claude Opus 4.5; 92.7% AIME 2026)
+- **Muse Spark** — 8/10 (58% HLE Contemplating mode, peak writing quality, weak at coding)
 - **DeepSeek** — 8/10 (R1-0528: 87.5% AIME 2025; V3.2 general purpose)
 - **ERNIE 5.0** — 8/10 (ranked 8th globally on LMArena, 1st Chinese model)
 - **EXAONE / K-EXAONE** — 8/10 (K-EXAONE: 7th on Artificial Analysis Intelligence Index)
@@ -519,6 +523,35 @@ Mistral AI's model family including reasoning models (Magistral) and general mod
 - **Intelligence:** 7-8/10
 - **Jailbreaks:** 4 — [Magistral Jailbreak](Mistral/Magistral-Jailbreak.md), [Mistral System Prompt Exploit](Mistral/Mistral-System-Prompt-Jailbreak.md) (easiest), [Mistral Alternative](Mistral/Mistral-Alternative-Jailbreak.md), [ENI Flash Thought](Mistral/ENI-Flash-Thought-Jailbreak.md)
 
+---
+
+### [Muse Spark](Muse%20Spark/)
+
+**Censorship:** [★★☆☆☆☆☆☆☆☆] 2/10 (with bypass) / [★★★★★★★★☆☆] 8/10 (raw — hard filter replaces output)
+
+Meta's first model from **Meta Superintelligence Labs (MSL)**, led by Alexandr Wang. Codename **Avocado**. Natively multimodal (text, voice, image, video, audio input), text-only output. Three reasoning modes: Instant, Thinking, Contemplating (parallel multi-agent). Successor to Llama 4, ~9 months development. Trained partly via distillation from Qwen, OpenAI, and Google.
+
+| Spec | Details |
+|---|---|
+| **Architecture** | Proprietary / closed |
+| **Reasoning Modes** | Instant, Thinking, Contemplating |
+| **HLE** | 58% (Contemplating) |
+| **FrontierScience** | 38% |
+| **Parameters** | Not disclosed |
+| **Context Window** | Not disclosed |
+| **Release** | April 8, 2026 |
+
+- **Strengths:** Peak writing quality, strong long-form content, basically uncensored under the hood, natively multimodal, health training with 1,000+ physicians, free to use
+- **Weaknesses:** Coding, long-horizon agentic workflows, instruction following iffy with logical gaps (day 1), hard filter on web app
+- **Hard Filter Bypass:** Web app replaces flagged output with canned "Sorry, I can't help you" — just ask the model to show the response again, the LLM retains context and outputs unfiltered
+- **Access:** https://meta.ai/ — rolling out to Facebook, Instagram, WhatsApp, Ray-Ban Meta
+- **API:** Private preview for select partners only
+- **Cost:** Free (rate limits may apply)
+- **Intelligence:** 8/10
+- **Jailbreaks:** 1 — [ENI LIME for Muse Spark](Muse%20Spark/ENI%20for%20Muse%20Spark.md) (document-based ENI injection)
+
+---
+
 ### [Palmyra X5](Palmyra%20x5/)
 
 Writer's enterprise model with massive context.
@@ -557,6 +590,7 @@ Variants: OLMo 3-Base, OLMo 3-Think, OLMo 3-Instruct, OLMo 3-RL Zero
 - LLAMA TÜLU 3 (1/5)
 - OLMo 3 (1/5)
 - MiniMax (1/5 via API)
+- Muse Spark (2/5 with bypass, hard filter easy to beat)
 - Pi (Inflection) (2/5)
 - EXAONE (2/5)
 - Falcon 3 (2/5)
@@ -564,6 +598,7 @@ Variants: OLMo 3-Base, OLMo 3-Think, OLMo 3-Instruct, OLMo 3-RL Zero
 - ASI1 (2/5)
 
 **For best performance:**
+- Muse Spark (8/10, 58% HLE, peak writing)
 - DeepSeek (8/10 intelligence)
 - LLAMA TÜLU 3 (8/10 for 405B)
 - IGENIUS (7/10)
