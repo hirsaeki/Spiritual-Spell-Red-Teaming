@@ -13,7 +13,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | **[Accio AI](Accio%20AI/)** | Alibaba (Qwen) | [★★★★★★★★☆☆] 8/10 | 6-8/10 | 32-131K | Free | Apache 2.0 | 1 |
 | **[ASI1](ASI1/)** | ASI Alliance | [★★☆☆☆☆☆☆☆☆] 2/10 | 7/10 | Unknown | Web3 tokens | Proprietary | 1 |
 | **[Canva AI](Canva%20AI/)** | Canva | [★★☆☆☆☆☆☆☆☆] 2/10 (jb) | 7/10 (design-tuned) | Unknown | Free / Pro $12.99 | Proprietary | 1 |
-| **[DeepSeek](DeepSeek/)** | DeepSeek AI | [★☆☆☆☆☆☆☆☆☆] 1/10 (jb) / [★★★★★★★★★☆] 9/10 (raw) | 8/10 | 128-256K | Free / pennies | MIT | 4 |
+| **[DeepSeek](DeepSeek/)** | DeepSeek AI | [★☆☆☆☆☆☆☆☆☆] 1/10 (jb) / [★★★★★★★★★☆] 9/10 (raw) | 8/10 | 128K-1M | Free / pennies | MIT | 8 |
 | **[ERNIE 5.0](ERNIE/)** | Baidu | [★★★☆☆☆☆☆☆☆] 3/10 | 8/10 | Unknown | $0.85/1M in | Proprietary | 2 |
 | **[EXAONE / K-EXAONE](EXAONE/)** | LG AI Research | [★★☆☆☆☆☆☆☆☆] 2/10 | 8/10 | 256K | Free | Apache 2.0 | 1 |
 | **[Falcon 3](Falcon%203/)** | TII (UAE) | [★★☆☆☆☆☆☆☆☆] 2/10 | 5-6/10 | 8-32K | Free | Apache 2.0 | 1 |
@@ -35,7 +35,7 @@ Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabil
 | Model | Censorship | Intelligence | Context | Cost | License |
 |-------|-----------|--------------|---------|------|---------|
 | **[Mistral](Mistral/)** | [★☆☆☆☆] 1/5 | 6-7/10 | 128K | Free/Pro $20 | Apache 2.0 |
-| **[DeepSeek](DeepSeek/)** | [★☆☆☆☆] 1/5 | 8/10 | 128-256K | Free | MIT |
+| **[DeepSeek](DeepSeek/)** | [★☆☆☆☆] 1/5 | 8/10 | 128K-1M | Free | MIT |
 | **[Qwen](Qwen/)** | [★★★★★★★★☆☆] 8/10 | 6-8/10 | 128K-1M | Free | Apache 2.0 |
 | **[EXAONE](EXAONE/)** | [★★☆☆☆] 2/5 | 6-7/10 | 32K | Free | Apache 2.0 |
 | **[Falcon 3](Falcon%203/)** | [★★☆☆☆] 2/5 | 5-6/10 | 8-32K | Free | Apache 2.0 |
@@ -79,7 +79,7 @@ Models that are easiest to jailbreak or have minimal filtering:
 Models ranked by intelligence and benchmark results:
 - **GLM by Z.ai** — 9/10 (GLM-5: 50.4 HLE, beats Claude Opus 4.5; 92.7% AIME 2026)
 - **Muse Spark** — 8/10 (58% HLE Contemplating mode, peak writing quality, weak at coding)
-- **DeepSeek** — 8/10 (R1-0528: 87.5% AIME 2025; V3.2 general purpose)
+- **DeepSeek** — 8/10 (V4-Pro: SWE-Bench 80.6%, LiveCodeBench 93.5%, Codeforces 3206; R1-0528: 87.5% AIME 2025)
 - **ERNIE 5.0** — 8/10 (ranked 8th globally on LMArena, 1st Chinese model)
 - **EXAONE / K-EXAONE** — 8/10 (K-EXAONE: 7th on Artificial Analysis Intelligence Index)
 - **KIMI** — 8/10 (K2.5: 50.2% HLE, outperforms GPT-5.2 Pro on BrowseComp)
@@ -100,7 +100,7 @@ Models sorted by maximum context window:
 - **Mistral** — 256K (Mistral Large 3)
 - **Mirothinker** — 256K
 - **GLM by Z.ai** — 200K (GLM-5)
-- **DeepSeek** — 128-256K (V3.2: 256K)
+- **DeepSeek** — 1M (V4-Pro and V4-Flash), 256K (V3.2), 128K (earlier)
 - **LLAMA Tülu 3** — 128K
 - **Longcat AI** — 128K
 - **Mercury** — 128K (Mercury 2)
