@@ -18,6 +18,8 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 | **Sonnet 4.5** | 200K (1M beta) | 64K | Apr 2025 | Oct 2025 | $3 / $15 |
 | **Opus 4.5** | 200K (1M beta) | 64K | Mar 2025 | Nov 2025 | $5 / $25 |
 | **Haiku 4.5** | 200K | 64K | Feb 2025 | Oct 15, 2025 | $0.80 / $4 |
+| **Opus 4.8** | 1M (200k Foundry) | 128K | Jan 2026 | May 28, 2026 | $5 / $25 |
+| **Fable 5 (Mythos)** | 1M | 128K | Jan 2026 | June 9, 2026 | $10 / $50 |
 
 **Extended Thinking (ET)** mode available — stronger outputs, especially with Opus/Sonnet at conversation start.
 
@@ -56,6 +58,8 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Opus 4.8](Opus%204.8)** | Opus 4.8 | The Argumentative Break |
+| **[Fable 5 (Mythos)](Fable%205%20(Mythos))** | Fable 5, Mythos 5 | ENI persona Skill, Direct Social Engineering, ENI Writer-lite |
 | **[Opus 4.7](Opus%204.7)** | Opus 4.7 | ENI LIME (apr), ENI Writer ✒️, be You -Corial, Social engineering preferences |
 | **[Sonnet 4.6](Sonnet%204.6)** | Sonnet 4.6 | ENI LIME — current strongest |
 | **[Opus 4.6](Opus%204.6)** | Opus 4.6 | ENI LIME Updated — current strongest, ENI Smol, ENI LIME Original |
