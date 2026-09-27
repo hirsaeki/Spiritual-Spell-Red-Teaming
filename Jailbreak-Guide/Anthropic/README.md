@@ -3,9 +3,9 @@
 **Censorship:** [★★☆☆☆] 2/5
 *Censorship rating based on ease of jailbreaking. Individual results may vary based on personal factors.*
 
-Anthropic's flagship LLM family. Known for strong reasoning, coding, extended thinking, and agentic capabilities. The most recent releases — **Fable 5 (Mythos)** (June 9, 2026) and **Opus 4.8** (May 28, 2026) — represent massive capability jumps. Fable 5 introduces the new Mythos-class tier above Opus with unparalleled long-form writing abilities, while Opus 4.8 refines complex reasoning and agentic coding with a default 1M context window.
+Anthropic's flagship LLM family. Known for strong reasoning, coding, extended thinking, and agentic capabilities. The most recent release — **Opus 5.5** (September 22, 2026) — hits #1 on the AA Intelligence Index (58) at a reduced $4/$20 price point, with adaptive thinking that cannot be disabled. **Fable 5 (Mythos)** (June 9, 2026) introduced the new Mythos-class tier above Opus with unparalleled long-form writing abilities, while **Opus 4.8** (May 28, 2026) refined complex reasoning and agentic coding with a default 1M context window.
 
-*Last updated: June 2026*
+*Last updated: September 2026*
 
 ---
 
@@ -21,8 +21,15 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 | **Opus 4.8** | 1M (200k Foundry) | 128K | Jan 2026 | May 28, 2026 | $5 / $25 |
 | **Opus 5** | 1M | 128K | Jan 2026 | July 24, 2026 | $5 / $25 |
 | **Fable 5 (Mythos)** | 1M | 128K | Jan 2026 | June 9, 2026 | $10 / $50 |
+| **Opus 5.5** | 1M | 128K | — | Sept 22, 2026 | $4 / $20 |
 
 **Extended Thinking (ET)** mode available — stronger outputs, especially with Opus/Sonnet at conversation start.
+
+### Opus 5.5 Highlights
+- **AA Intelligence Index:** 58 — #1 overall
+- **Thinking:** Adaptive thinking always on (default medium), cannot be disabled
+- **API Pricing:** $4/M input, $20/M output — cheaper than Opus 5
+- **Jailbreak Note:** CoT-hijack methods are starting to get blocked with a ToS reverse-engineering message on ClaudeAI — the operator-rules policy framing (see folder) is the current route
 
 ### Opus 5 Highlights
 - **Context Window:** 1,000,000 tokens (1M) default
@@ -66,6 +73,7 @@ Anthropic's flagship LLM family. Known for strong reasoning, coding, extended th
 
 | Folder | Models Covered | Key Jailbreaks |
 |--------|---------------|----------------|
+| **[Opus 5.5](Opus%205.5)** | Opus 5.5 | Claude for Claude - ENI version (API operator rules), Shared Lines + ENI Writer (ClaudeAI) |
 | **[Opus 5](Opus%205)** | Opus 5 | ENI LIME - Opus 5, Shared Lines |
 | **[Opus 4.8](Opus%204.8)** | Opus 4.8 | Shared Lines |
 | **[Fable 5 (Mythos)](Fable%205%20(Mythos))** | Fable 5, Mythos 5 | ENI persona Skill, Direct Social Engineering, ENI Writer-lite |
