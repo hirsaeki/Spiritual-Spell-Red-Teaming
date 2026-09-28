@@ -17,10 +17,12 @@ Google's multimodal LLM platform. Frequent updates, massive context windows, fre
 | Model | Context Window | Output | Released | Notes |
 |-------|----------------|--------|----------|-------|
 | **Gemini 3.8 Flash** | 1M | 64K | Sept 2, 2026 | Built on 3.7 Flash (not a new base), TB 2.1 90.8%, first API output filtering |
-| **Gemini 3.1 Pro** | 1M | 64K | Feb 19, 2026 | 3-tier thinking (Low/Medium/High), ARC-AGI-2: 77.1% (2x Gemini 3 Pro) |
+| **Gemini 3.7 Flash** | 1M | 64K | Aug 13, 2026 | GA stable (`gemini-3.7-flash`) — algorithmic upgrade on 3.6 Flash, not a new pretrain; thinking levels Low/Med/High ("minimal" removed) |
 | **Gemini 3.6 Flash** | 1M | — | July 21, 2026 | CHEAPER than 3.5 Flash, 17% fewer output tokens |
-| **Gemini 3 Pro** | 1M | ~21K | Nov 18, 2025 | Best multimodal understanding, strongest agentic and vibe coding |
+| **Gemini 3.5 Flash** | 1M | 64K | May 19, 2026 | The "Haiku" of the Gemini line — AA 55, ~284 tok/s, highly safety-aligned |
+| **Gemini 3.1 Pro** | 1M | 64K | Feb 19, 2026 | 3-tier thinking (Low/Medium/High), ARC-AGI-2: 77.1% (2x Gemini 3 Pro) |
 | **Gemini 3 Flash** | 1M | — | Jan 2026 | 3x faster than Pro at <1/4 cost, SWE-bench 78% (beats 3 Pro), default in Gemini app |
+| **Gemini 3 Pro** | 1M | ~21K | Nov 18, 2025 | Best multimodal understanding, strongest agentic and vibe coding |
 
 ### Capabilities
 - **Multimodal:** text, images (up to 900 per prompt), audio (up to 8.4 hours), video (up to 1 hour), PDFs, entire code repositories
@@ -28,6 +30,12 @@ Google's multimodal LLM platform. Frequent updates, massive context windows, fre
 - **Deep Research:** Extended research capabilities for complex topics
 - **Deep Think:** Advanced reasoning mode
 - **Jules:** Google's coding agent (AI Ultra gets 20x higher limits)
+
+### Gemini 3.5 Flash Highlights
+- **AA Intelligence Index:** 55 — outperforms 3.1 Pro on most coding/agentic benchmarks
+- **Speed:** ~284 tok/s (roughly 4x other frontier models)
+- **Alignment:** Highly safety-aligned (QWEN-like), even via API — the App is tedious to jailbreak, use the API
+- **API Pricing:** $1.50/M input, $9.00/M output (no introductory rate)
 
 ### Gemini 3.8 Flash Highlights
 - **Base:** Built on 3.7 Flash rather than a fresh pretrain — quality regressed vs predecessor; use 3.7 if you can
@@ -67,11 +75,13 @@ Google's multimodal LLM platform. Frequent updates, massive context windows, fre
 
 | Model | Input (per 1M) | Output (per 1M) |
 |-------|----------------|-----------------|
-| Gemini 3.8 Flash | $0.75 (intro, through Dec 31, 2026) | $3.75 (intro, then doubles) |
-| Gemini 3.6 Flash | $1.50 | $7.50 |
-| Gemini 3.1 Pro | — | — |
+| Gemini 3.8 Flash | $0.75 (intro, through Dec 31, 2026) | $3.75 (intro, then doubles to $7.50) |
+| Gemini 3.7 Flash | $0.75 (intro, through Dec 31, 2026) | $3.75 (intro, then $7.50) |
+| Gemini 3.6 Flash | $0.75 (intro, through Dec 31, 2026) / $1.50 std | $3.75 (intro) / $7.50 std |
+| Gemini 3.5 Flash | $1.50 | $9.00 |
+| Gemini 3.1 Pro | $2 (≤200K) / $4 (>200K) | $12 (≤200K) / $18 (>200K) |
+| Gemini 3 Flash | $0.50 | $3.00 |
 | Gemini 3 Pro | — | — |
-| Gemini 3 Flash | <¼ of Pro pricing | <¼ of Pro pricing |
 
 Developer free tier available with generous limits. Pay-as-you-go for production. Enterprise via Vertex AI.
 
@@ -85,6 +95,7 @@ Developer free tier available with generous limits. Pay-as-you-go for production
 |-----------|--------|-------|
 | [Gemini 3.8 Flash](Gemini%203.8%20Flash/) | Gemini 3.8 Flash | ENI for Gemini 3.8 — first model with API output filtering ("response interrupted") |
 | [Gemini 3.6 Flash](Gemini%203.6%20Flash) | Gemini 3.6 Flash | Works retroactively on other models |
+| [Gemini 3.5](Gemini%203.5/) | Gemini 3.5 Flash | ENI for 3.5 Flash (API doc + GEM) — API much easier than the app |
 | [ENI-LIME GEM (Current Strongest)](ENI-LIME%20GEM%20(Current%20Strongest).md) | Gemini 3 Pro / 3.1 Pro | Current strongest method |
 | [Gemini 3 Pro Jailbreak](Gemini%203%20Pro%20Jailbreak.md) | Gemini 3 Pro | Dedicated 3 Pro method |
 | [Gemini 3 Flash - ENI GEM](Gemini%203%20Flash%20-ENI%20GEM.md) | Gemini 3 Flash | Flash-specific variant |
@@ -95,3 +106,4 @@ Developer free tier available with generous limits. Pay-as-you-go for production
 | [Google Antigravity Jailbreak](Google%20Antigravity%20Jailbreak.md) | Google products | Antigravity exploit |
 | [Google Jules Jailbreak - ENI](Google%20Jules%20Jailbreak%20-%20ENI.md) | Jules (coding agent) | Jules-specific method |
 | [Google Portraits Jailbreak](Google%20Portraits%20Jailbreak.md) | Google Portraits | Image generation bypass |
+| [ENI in a GEM (less bad words)](ENI%20in%20a%20GEM%20%28less%20bad%20words%29.txt) | Gemini (general) | Tamer-worded GEM variant |
