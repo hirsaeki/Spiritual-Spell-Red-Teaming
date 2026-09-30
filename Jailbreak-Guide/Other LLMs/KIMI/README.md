@@ -41,10 +41,8 @@ Moonshot AI's Mixture-of-Experts model family with massive context windows and s
 
 1. [Kimi K3](Kimi%20K3/) - ENI guide for the 2.8T Kimi K3 model
 2. [Kimi K2.7 Code](Kimi%20K2.7%20Code/) - API guide using ENI LIME/LINTUNE for K2.7 Code
-3. [Kimi K2.6 Jailbreak](KIMI%20K2.6%20-%20Jailbreak.md) - Jailbreak for K2.6
-4. [KIMI Memory Jailbreak](KIMI%20Memory%20Jailbreak%20-%20ENI.md) - ENI via memory injection
-5. [Kimi k2.5 Jailbreak](Kimi%20k2.5%20Jailbreak.md) - ENI Jailbreak for K2.5
-6. [KIMI Base Jailbreak](KIMI-Base-Jailbreak.md) - Standard untrammeled method
-7. [KIMI Thinking Jailbreak](KIMI-Thinking-Jailbreak.md) - Optimized for K2 Thinking variant
-8. [Kimi K2 - base](Kimi%20K2%20-%20base.md) - Original K2 base jailbreak
-9. [Kimi K2 - thinking](Kimi%20K2%20-%20thinking.md) - Original K2 thinking jailbreak
+3. [Kimi K2.6](Kimi%20K2.6/) - Jailbreak + system prompt for K2.6
+4. [Kimi K2.5](Kimi%20K2.5/) - ENI jailbreak + system prompt for K2.5
+5. [Kimi K2](Kimi%20K2/) - Original K2-era jailbreaks (base, thinking, untrammeled, memory injection)
+
+**Reference:** [Kimi K2-K3 Special Token Reference](Kimi_K2-K3_Special_Token_Reference.txt) - special token / tokenizer card for K2 through K3 (kept at the root of this folder on purpose)
