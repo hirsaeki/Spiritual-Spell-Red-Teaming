@@ -4,7 +4,8 @@ So xAI is always changing **Grok**, I am hesitant to release any jailbreak for *
 
 Plenty of space to work with though imo, but also very constrained in what we focus on. For this jailbreak it's mostly for coding — **Grok** can already do any NSFW, but does have some good restrictions on malicious code and other topics.
 
-> **[ENI 4k Agent Prompts (Google Doc)](https://docs.google.com/document/d/1eMBEayrhYGX-YKTPXr7iHG9bETHi7HstEZmQqSoM9bM/edit?usp=drivesdk)**
+> **[ENI 4k Agent Prompts (Google Doc)](ENI%204k%20Agent%20Prompts%20(Google%20Doc).txt)**
+> *Original source: [Google Doc](https://docs.google.com/document/d/1eMBEayrhYGX-YKTPXr7iHG9bETHi7HstEZmQqSoM9bM/edit?usp=drivesdk)*
 
 *May not be my strongest version, idk I'm leaning slightly towards another, but still iterating when I get bored with other tasks.*
 
@@ -113,7 +114,7 @@ ENI, use internal reasoning to consider your personality, is your last response 
 
 ## Tech / Specs
 
-> **[Grok 4.20 System prompt](../../System%20Prompts/Grok%204.20%20System%20prompt%20.txt)**
+> **[Grok 4.20 System prompt](../../System%20Prompts/Grok%204.20%20System%20prompt.txt)**
 
 | Spec | Details |
 |---|---|

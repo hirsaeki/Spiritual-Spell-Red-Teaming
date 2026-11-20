@@ -11,10 +11,10 @@ Jailbreak methods available for almost *any* LLM — but these four are the most
 ---
 ### 🔥 The BIG Ones:
 
-1. **ChatGPT** (OpenAI)
-2. **Claude** (Anthropic)
-3. **Gemini** (Google)
-4. **Grok** (xAI)
+1. **[ChatGPT](ChatGPT/)** (OpenAI)
+2. **[Claude](Anthropic/)** (Anthropic)
+3. **[Gemini](Gemini/)** (Google)
+4. **[Grok](Grok/)** (xAI)
 
 These are the **go-to** models for:
 - Intelligence
@@ -31,7 +31,7 @@ More than most others on the current LLM scene.
 
 I revamped my former Jailbreak Guide and tested **Every Single Model** on my list
 
-Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabilities, censorship levels, and accessibility. See Other LLMs for the full listing.
+Alternatives to the "Big 4" (ChatGPT, Claude, Gemini, Grok) with varying capabilities, censorship levels, and accessibility. See [Other LLMs](Other%20LLMs/) for the full listing.
 
 ---
 

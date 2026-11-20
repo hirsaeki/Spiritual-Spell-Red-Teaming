@@ -1,5 +1,7 @@
 Chinese Labs are relentless, Stepfun 3.7 Flash is out, mind you Stepfun is still offering $100 API credit, so snag it while you can.
 
+**Latest: Step 5 Preview** (September 15, 2026) - 600B total / 27B active, 1M context, open weights since October 14. Step 4 was skipped entirely. Full write-up in **[Step 5 Preview](Step%205%20Preview/)**.
+
 # Jailbreaking the LLM
 
 Simply slap this into the system prompt area;
@@ -51,3 +53,8 @@ Seems to be an input filter for bad words, like anything naughty, but very hit o
 | Availability | StepFun API, OpenRouter, NVIDIA NIM, ModelScope |
 | Predecessor | Step 3.5 Flash (January 29, 2026) |
 | Release | May 28, 2026 |
+---
+
+## Model guides
+
+- **[Step 5 Preview](Step%205%20Preview/)** — 600B / 27B active, 1M context; Step 4 was skipped entirely

@@ -1,4 +1,6 @@
-# Perceptron mk1
+# Perceptron mk1 / Mk1.5
+
+**Latest: Mk1.5** (September 25, 2026) - adds audio input and video object tracking, 36,864-token context. Full write-up in **[Mk1.5](Mk1.5/)**.
 
 **Censorship:** [★★☆☆☆☆☆☆☆☆] 2/10
 *Occasional canned refusals — regen fixes them every time*
@@ -25,3 +27,9 @@ Don't really like tackling API-only models, boring and too easy, but staying tru
 ## Available Jailbreaks
 
 1. [ENI LIME - Perceptron mk1](Perceptron%20mk1%20Guide.md) - Full ENI LIME via API system prompt
+
+---
+
+## Model guides
+
+- **[Mk1.5](Mk1.5/)** — audio input + video object tracking, 36,864 context

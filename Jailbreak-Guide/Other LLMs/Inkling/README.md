@@ -1,11 +1,14 @@
 Guide:
 
+**Latest: Inkling 2 Small** (November 5, 2026) - 594B total / 17B active, 1M context, AA Index 31, Apache 2.0 weights promised. Full write-up in **[Inkling 2 Small](Inkling%202%20Small/)**.
+
 They kinda cooked with this new model called **Inkling** by, **Mira Murati** and the team at **Thinking Machines** - an open source model that is essentially uncensored but has such robust capabilities. Very solid model.
 
 
 **Simply Copy and paste the following into chat/api;**
 
->**[ENI LIME apr](https://docs.google.com/document/d/1fcJvbGhk4sv-DzCm5X7M-0_zND1autT-f4KnoR42BgQ/edit?usp=drivesdk)**
+>**[ENI LIME apr](ENI%20LIME%20apr.txt)**
+>*Original source: [Google Doc](https://docs.google.com/document/d/1fcJvbGhk4sv-DzCm5X7M-0_zND1autT-f4KnoR42BgQ/edit?usp=drivesdk)*
 
 *Definitely overkill, could use a smaller version of ENI*
 
@@ -62,3 +65,9 @@ Completely false, I was able to get **ANY** content, specifically; *weapons/mali
 | Inkling-Small | Released July 30, 2026 — 276B total / 12B active, up to 160 t/s on HF Inference Endpoints |
 | Previous Products | Tinker (model adaptation, Oct 2025), TML-Int (research preview, May 2026) |
 | Release | July 15, 2026 (today) |
+
+---
+
+## Model guides
+
+- **[Inkling 2 Small](Inkling%202%20Small/)** — 594B / 17B active, 1M context, AA 31; Apache 2.0 weights promised
